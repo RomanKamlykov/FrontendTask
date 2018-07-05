@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col">
+        <a href="#"><img src="img/logo.png" class="img-fluid" alt=""></a>
+    </div>
+    <div class="col d-flex flex-column align-items-end justify-content-around">
+        <button type="button" class="btn" ng-class="loginbutton ? 'btn-link' : 'btn-primary'" id="enter" ng-click="showLoginForm()" ng-disabled="loginbutton">
+            <span ng-hide="loginbutton">Войти <img src="img/key.png" alt=""></span>
+            <span ng-show="loginbutton">Здравствуйте, {{loginData.username}}</span>
+        </button>
+
+        <a href="#/basket" class="btn btn-primary">
+            Корзина <img src="img/cart.png" alt="">
+        </a>    
+    </div>
+</div>
+    

@@ -1,0 +1,22 @@
+<div class="row py-3">
+    <div class="col-lg-3">
+        <h3>Группы товаров</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quo recusandae eligendi mollitia tempore optio voluptates corporis quibusdam nam placeat odit explicabo cumque nesciunt ullam, dicta ratione voluptatum perspiciatis. Autem.</p>        
+    </div>
+    <div class="col-lg-9">
+        <div class="d-flex align-content-start justify-content-start flex-wrap">
+            <div class="card mb-3 mr-3" style="width: 16rem;" ng-repeat="item in categories">
+                <a href="#/categories/{{item.name}}">    
+                    <img class="card-img-top" src="{{item.img}}" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#/categories/{{item.name}}" class="btn btn-primary align-bottom">Выбрать группу</a>
+                </div>
+            </div>
+
+        </div>                    
+    </div>
+</div> 
+    

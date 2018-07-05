@@ -1,0 +1,23 @@
+<div class="row py-3">
+    <div class="col-lg-3">
+        <h3>{{searchGroup}}</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quo recusandae eligendi mollitia tempore optio voluptates corporis quibusdam nam placeat odit explicabo cumque nesciunt ullam, dicta ratione voluptatum perspiciatis. Autem.</p>        
+    </div>
+
+    <div class="col-lg-9">
+        <div class="d-flex align-content-start justify-content-start flex-wrap">
+            <div class="card mb-3 mr-3" style="width: 16rem;" ng-repeat="item in items">
+                <a href="#/goods/{{item.card}}">
+                    <img class="card-img-top" src="{{item.img}}" alt="Card image cap">
+                </a>                
+                <div class="card-body">
+                    <a href="#/goods/{{item.card}}" class="card-title h5">{{item.name}}</a>
+                    <div class="d-flex justify-content-between">
+                        <span class="h3">{{item.price + " грн."}}</span>
+                        <button type="button" class="btn btn-success" ng-click="basketChange(item.card, +1)">Купить</button> 
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

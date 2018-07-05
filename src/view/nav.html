@@ -1,0 +1,23 @@
+<div class="row p-3">
+   <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" ng-class="getClass('/')" href="#/">Главная страница</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" ng-class="getClass('/models')" href="#/models">Модели автомобилей</a>
+            <div class="dropdown-content">
+                <a href="#/models/{{item.name}}" class="nav-link" ng-class="getClass('/models/{{item.name}}')" ng-repeat="item in models">{{item.name}}</a>
+            </div> 
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" ng-class="getClass('/categories')" href="#/categories">Группы товаров</a>
+            <div class="dropdown-content">
+                <a href="#/categories/{{item.name}}" class="nav-link" ng-class="getClass('/categories/{{item.name}}')" ng-repeat="item in categories">{{item.name}}</a>
+            </div>            
+        </li>        
+        <li class="nav-item">
+            <a class="nav-link" ng-class="getClass('/goods')" href="#/goods">Все товары</a>
+        </li>        
+    </ul> 
+</div>
+

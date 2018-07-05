@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
+    <link rel="stylesheet/less" type="text/css" href="css/main.less" />
+    <script src="js/libs/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/less.min.js" ></script>
+    <script src="js/libs/angular.min.js"></script>
+    <script src="js/libs/angular-route.min.js"></script>
+    <script src="js/customServices.js"></script>
+    <script src="js/RouteModule.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-controller="SampleAppCtrl">
+
+    <header class="container border border-dark rounded" ng-include="'view/header.html'">                       
+    </header>
+
+    <nav class="container border border-dark rounded" ng-include="'view/nav.html'">                       
+    </nav>
+
+    <article class="container border border-dark rounded" ng-view>        
+    </article>
+
+    <footer class="container border border-dark rounded text-justify" ng-include="'view/footer.html'">                       
+    </footer>
+
+    <div ng-include="loginForm" class="login__containet">        
+    </div>
+
+</body>
+</html>

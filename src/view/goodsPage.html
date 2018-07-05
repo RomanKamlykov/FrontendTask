@@ -1,0 +1,47 @@
+<h1>{{item[0].name}}</h1>
+<div class="row p-3">
+    <div class="col-lg-6 bg-light rounded p-3">
+        <img src="{{item[0].img}}" class="img-fluid" alt="">
+    </div>
+    <div class="col-lg-6">
+        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Описание</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Характеристики</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Отзывы</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error dolorem minus totam perspiciatis quam libero aperiam ducimus veniam repudiandae laudantium, praesentium doloribus ipsam rerum cupiditate officia sequi, odit odio ipsum.
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure facilis, recusandae dolore, quas aperiam dicta sapiente cum iusto omnis quidem impedit nisi aliquam ut nam incidunt suscipit consequatur veniam sint?
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus facere adipisci beatae voluptatibus sequi dolorem nesciunt, similique ipsa, modi distinctio eaque labore eligendi fugiat iusto blanditiis. Commodi cupiditate nostrum harum.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 panel panel-default">
+        <div class="panel-body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate sed eaque sunt est qui porro excepturi, exercitationem blanditiis, id doloribus necessitatibus, saepe assumenda alias voluptatem eos repellat commodi nesciunt.
+                Obcaecati omnis incidunt, modi eum architecto culpa esse ullam, quia, ratione cupiditate perspiciatis ipsum expedita quam quidem consequatur nam sapiente corrupti recusandae ipsam aliquam debitis commodi dicta quisquam? Modi, adipisci?
+                Iusto facilis magni, impedit perspiciatis autem porro distinctio sapiente, excepturi dolore eveniet similique totam cum iste eligendi deserunt dicta esse quam quod laboriosam omnis eaque. Laborum velit magnam laudantium itaque.
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+    $('#myTab a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+</script>

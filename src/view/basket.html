@@ -1,0 +1,33 @@
+<button class="btn btn-primary my-3">Отправить заказ</button>
+<table class="table basket">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Наименование товара</th>        
+        <th>Количество</th>
+        <th>Цена</th>
+        <th>Сумма</th>
+        <th>Заказ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in data">
+        <td>{{$index + 1}}</td>
+        <td><a href="#/goods/{{item.card}}" class="card-title h5">{{item.name}}</a></td>        
+        <td style="width: 150px">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" ng-click="basketChange($index, -1)"><strong>−</strong></button>
+                </div>
+                <input type="text" class="form-control" value="{{basket[item.card]}}" readonly />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" ng-click="basketChange($index, +1)"><strong>+</strong></button>
+                </div>
+            </div>        
+        </td>
+        <td>{{item.price + " грн."}}</td>
+        <td>{{item.price*basket[item.card] + " грн."}}</td>
+        <td style="width: 150px"><input type="checkbox" checked /></td>
+      </tr>
+    </tbody>
+  </table>
