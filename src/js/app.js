@@ -29,7 +29,7 @@ app.controller("SampleAppCtrl", function ($scope, $location, ajaxServices, baske
     $scope.loginData = {}; //объект для передачи логина/пароля    
     //функция отображает форму для ввода логина/пароля
     $scope.showLoginForm = function() {
-        $scope.loginForm = "html/login.html";
+        $scope.loginForm = "view/login.html";
     }
     //функция скрывает форму для ввода логина/пароля
     $scope.hideLoginForm = function() {
