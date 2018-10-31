@@ -1,6 +1,6 @@
 # FrontendTask
 <p>
-  Ссылка для просмотра приложения <a href='https://romankamlykov.github.io/FrontendTask/src/index.html#/' target='_blank'>GitHub Pages</a>
+  Ссылка для просмотра приложения <a href='https://romankamlykov.github.io/angularjs_app_1/src/index.html#/' target='_blank'>GitHub Pages</a>
 </p>
 
 <p>
