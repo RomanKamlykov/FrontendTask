@@ -1,4 +1,4 @@
-# FrontendTask
+# angularjs_app_1
 You can see the working application [here](https://romankamlykov.github.io/angularjs_app_1/src/index.html).
 
 The application uses the following tools:
